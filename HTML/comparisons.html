@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Web Visualization</title>
+  <title>Web-Visualization </title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -26,7 +26,7 @@
   <div>
     <div class="row">
       <div class="col col-6 homebtn">
-        <a target= "_blank" href="../HTML/landingpage.html">Lattitude</a>
+        <a href="../HTML/landingpage.html">Comparisons</a>
       </div>
       <div class="col col-6 menubuttons divtop">
 
@@ -45,14 +45,14 @@
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="visualization-1.html">Max Temperature</a>
-                  <a class="dropdown-item" href="visualization-2.html">Humidity</a>
-                  <a class="dropdown-item" href="visualization-3.html">Cloudiness</a>
-                  <a class="dropdown-item" href="visualization-4.html">Wind Speed</a>
+                  <a class="dropdown-item" href="../HTML/visualization-1.html">Max Temperature</a>
+                  <a class="dropdown-item" href="../HTML/visualization-2.html">Humidity</a>
+                  <a class="dropdown-item" href="../HTML/visualization-3.html">Cloudiness</a>
+                  <a class="dropdown-item" href="../HTML/visualization-4.html">Wind Speed</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="comparison.html">Comparison</a>
+                <a class="nav-link" href="comparisons.html">Comparison</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../Resources/cities.csv">Data</a>
@@ -69,42 +69,42 @@
   <div class="container">
     <br>
     <div class="row">
-      <!-- left side -->
-      <div class="col col-12 col-md-8 divbdy">
+      
+      <div class="col col-12 divbdy">
         <br>
-        <h1>Summary: Latitude vs. X</h1>
+        <h1>Comparisons Latitude VS X</h1>
         <hr>
-        <img src="../Visualizations/Fig1.png" alt="Latitude vs. Temperature" width="280" align="left">
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-          accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500
-          cities.</p>
-        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
-          we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the souce data
-          and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and
-          correlations witnesseed.</p>
-        <hr>
-      </div>
-      <!-- left side end -->
-      <!-- rigth side -->
-      <div class="col col-12 col-md-4 divbdy">
-        <br>
-        <h2>Visualizations</h2>
-        <hr>
-        <div class='row'>
-          <div class="col col-3 col-md-6">
-            <a target= "_blank" href="visualization-1.html"><img src="../Visualizations/Fig1.png" alt="Latitude vs. Temperature"></a>
-          </div>
-          <div class="col col-3 col-md-6">
-            <a target= "_blank" href="visualization-2.html"><img src="../Visualizations/Fig2.png" alt="Latitude vs. Humidity"></a>
-          </div>
-          <div class="col col-3 col-md-6">
-            <a target= "_blank" href="visualization-3.html"><img src="../Visualizations/Fig3.png" alt="Latitude vs. Cloudiness"></a>
-          </div>
-          <div class="col col-3 col-md-6">
-            <a target= "_blank" href="visualization-4.html"><img src="../Visualizations/Fig4.png" alt="Latitude vs. Wind Speed"></a>
-          </div>
+  
+        <p>
+          Click any plot to get an in-depth analysis. 
+         </p>
+        
+
+
+
+      <div class='row'>
+        <div class="col col-12 col-md-6"> <h3> vs. Max Temperature </h3>
+          <a href="visualization-1.html"><img src="../Visualizations/Fig1.png" alt="Latitude vs. Temperature" id="imgsel"></a>
+        </div>
+        <div class="col col-12 col-md-6"><h3> vs. Humidity </h3>
+          <a href="visualization-2.html"><img src="../Visualizations/Fig2.png" alt="Latitude vs. Humidity"></a>
+        </div>
+        <div class="col col-12 col-md-6"><h3> vs. Cloudiness </h3>
+          <a href="visualization-3.html"><img src="../Visualizations/Fig3.png" alt="Latitude vs. Cloudiness"></a>
+        </div>
+        <div class="col col-12 col-md-6"><h3> vs. Wind Speed </h3>
+          <a href="visualization-4.html"><img src="../Visualizations/Fig4.png" alt="Latitude vs. Wind Speed"></a>
         </div>
       </div>
+    </div>
+    </div>
+      
+
+
+
+
+      
+      
       <!-- end of rigth side -->
     </div>
   </div>

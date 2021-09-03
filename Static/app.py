@@ -12,7 +12,6 @@ def home():
     return "Welcome to my 'Home' page!"
 
 
-# 4. Define what to do when a user hits the /about route
 
 
 if __name__ == "__main__":
